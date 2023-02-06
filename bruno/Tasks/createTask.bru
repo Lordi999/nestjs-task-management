@@ -1,0 +1,13 @@
+name createTask
+method POST
+url http://localhost:3000/tasks
+type http-request
+body-mode json
+seq 3
+
+body(type=json)
+  {
+    "title": "Test Task",
+    "description": "This is just a test task"
+  }
+/body

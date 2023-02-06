@@ -1,0 +1,12 @@
+name updateTaskStatus
+method PATCH
+url http://localhost:3000/tasks/8051a447-da65-48e7-9e7e-44dffcf38d4a/status
+type http-request
+body-mode json
+seq 5
+
+body(type=json)
+  {
+    "status": "IN_PROGRESS"
+  }
+/body

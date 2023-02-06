@@ -1,0 +1,11 @@
+name getTasksWithFilter
+method GET
+url http://localhost:3000/tasks?status=OPEN&search=Sleep
+type http-request
+body-mode none
+seq 1
+
+params
+  1 status OPEN
+  1 search Sleep
+/params
