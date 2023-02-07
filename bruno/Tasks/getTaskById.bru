@@ -1,6 +1,14 @@
-name getTaskById
-method GET
-url http://localhost:3000/tasks/4dd87e14-2a39-4f06-9704-0912f53dbe2b
-type http-request
-body-mode none
-seq 2
+meta {
+  name: getTaskById
+  type: http
+  seq: 2
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlRvYmlhcyIsImlhdCI6MTY3NTc2NDQ1MSwiZXhwIjoxNjc1NzY4MDUxfQ.PnVpCLK3KYlCiF99s5wFFNbfbtT_Pi61Z2bmMtkjxiA
+}
+
+get {
+  url: http://localhost:3000/tasks/4dd87e14-2a39-4f06-9704-0912f53dbe2b
+  body: none
+}

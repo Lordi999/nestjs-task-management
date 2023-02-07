@@ -1,6 +1,14 @@
-name getAllTasks
-method GET
-url http://localhost:3000/tasks
-type http-request
-body-mode none
-seq 1
+meta {
+  name: getAllTasks
+  type: http
+  seq: 1
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlRvYmlhcyIsImlhdCI6MTY3NTc2NDQ1MSwiZXhwIjoxNjc1NzY4MDUxfQ.PnVpCLK3KYlCiF99s5wFFNbfbtT_Pi61Z2bmMtkjxiA
+}
+
+get {
+  url: http://localhost:3000/tasks
+  body: none
+}
